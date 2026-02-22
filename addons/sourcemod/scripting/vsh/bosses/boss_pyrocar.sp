@@ -156,6 +156,11 @@ public void PyroCar_OnSpawn(SaxtonHaleBase boss)
 		SetEntProp(iWearable, Prop_Send, "m_nModelIndexOverrides", g_iPyrocarCosmetics[iRandom]);
 }
 
+public bool PyroCar_IsBossHidden(SaxtonHaleBase boss)
+{
+	return true;
+}
+
 public void PyroCar_OnThink(SaxtonHaleBase boss)
 {
 	//No jetpack charging during preround
